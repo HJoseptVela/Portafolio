@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="https://kit.fontawesome.com/961ace9b78.js" crossorigin="anonymous"></script>
+    <title>Portafolio Web</title>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="estilo.css" />
+      
+  </head>
+  <body>
+    <!-- SECCICÓN DE INICIO-->
+    <section id="inicio">
+      <div class="contenido">
+        <header>
+          <div class="contenido-header">
+            <h1>Portafolio Web</h1>
+            <nav id="nav" class="">
+              <ul id="links" class="">
+                <li>
+                  <a
+                    href="#inicio"
+                    class="seleccionado"
+                    onclick="seleccionar(this)"
+                    >INICIO</a
+                  >
+                </li>
+                <li>
+                  <a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a>
+                </li>
+                <li>
+                  <a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a>
+                </li>
+                <li>
+                  <a href="#portfolio" onclick="seleccionar(this)"
+                    >PORTAFOLIO</a
+                  >
+                </li>
+                <li>
+                  <a href="#contacto" onclick="seleccionar(this)">CONTACTO</a>
+                </li>
+              </ul>
+            </nav>
+
+            <!--Iconos menú responsive-->
+            <div id="icono-nav" onclick="responsiveMenu()" class="">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <!--Iconos de las redes sociales-->
+            <div class="redes">
+              <a href="https://www.linkedin.com/in/harlyvela/"><i class="fa-brands fa-linkedin"></i></i></a>
+              <a href="https://www.facebook.com/josept.vela02/"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com/wru.josh/"><i class="fa-brands fa-instagram"></i></i></a>
+            </div>
+          </div>
+        </header>
+        <div class="presentacion">
+          <p class="bienvenida">Bienvenidos</p>
+          <h2>Soy <span>Josept Vela</span>, Desarrollador Web</h2>
+          <p class="descripcion">
+            "La creatividad no tiene límites y fruto de ello es todo lo que nos rodea"
+          </p>
+          <a href="#">Ir a Portafolio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi">
+      <div class="contenedor-foto">
+        <img src="img/foto_dni.jpeg" />
+      </div>
+      <div class="sobremi">
+        <p class="titulo-seccion">Sobre Mi</p>
+        <h2>Hola, soy <span>Josept Vela</span></h2>
+        <h3>Desarrollador Web</h3>
+        <p>
+          Egresado del Instituto de Investigación y Desarrollo de Administración y Tecnología (IDAT) en la carrera de Desarrollo de Sistemas de Información.
+        </p>
+        <p>
+          Estudiante de 2do Ciclo de la Universidad Peruana de Ciencias Aplicadas (UPC) en la carrera de Ingeniería de Sistemas. 
+        </p>
+        <p>
+          Me considero una persona responsable, dinámica, creativa con facilidad de adaptación y capacidad de trabajar en equipo, con iniciativa de resolver problemas eficientemente.
+        </p>
+        <a href="/doc/sharly-vela_cv.pdf" download="CV_VelaHarly.pdf">Descargar CV</a>
+      </div>
+    </section>
+
+    <!-- SECCION SERVICIOS-->
+    <section id="servicios">
+      <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+      <div class="fila">
+        <div class="servicio">
+          <span class="icono"><i class="fa-solid fa-code" style="color:#BB1919"></i></span>
+          <h4>Back End</h4>
+          <hr />
+          <ul class="servicios-tag">
+            <li>Java</li>
+            <li>Laravel</li>
+            <li>C#</li>
+          </ul>
+          <p>
+            Producción de una interfaz completamente orientada al servidor o para hacer posible la navegación frontend del usuario
+          </p>
+        </div>
+        <div class="servicio">
+          <span class="icono"><i class="fa fa-mobile" style="color:#34BB77"></i></span>
+          <h4>Aplicaciones Móviles</h4>
+          <hr />
+          <ul class="servicios-tag">
+            <li>Java</li>
+            <li>Kotlin</li>
+          </ul>
+          <p>
+            Producción de programas orientados al fácil y rápido acceso mediandte el uso de sus dispositivos inalámbricos como celulares y tabletas.
+          </p>
+        </div>
+        <div class="servicio">
+          <span class="icono"><i class="fa fa-desktop" style="color:#348EBB"></i></span>
+          <h4>Front End</h4>
+          <hr />
+          <ul class="servicios-tag">
+            <li>React</li>
+            <li>Vue</li>
+            <li>Jquery</li>
+          </ul>
+          <p>
+            Producción de una interfaz orientada a que los usuarios se muevan con elementos como un navegador de ordenador, botones y texto.
+          </p>
+        </div>
+      </div>
+      <div class="fila">
+        <div class="servicio">
+          <span class="icono"><i class="fa-solid fa-sitemap" style="color:#2AA3DC"></i></i></span>
+          <h4>Redes</h4>
+          <hr />
+          <ul class="servicios-tag">
+            <li>Diseño</li>
+            <li>Arquitectura</li>
+            <li>Cableado</li>
+          </ul>
+          <p>
+            Interconexión de redes que pueden intercambiar datos y compartir recursos entre sí.
+          </p>
+        </div>
+        <div class="servicio">
+          <span class="icono"><i class="fa fa-database"></i></span>
+          <h4>Base de Datos</h4>
+          <hr />
+          <ul class="servicios-tag">
+            <li>MySQL</li>
+            <li>SQL</li>
+            <li>Oracle</li>
+          </ul>
+          <p>
+            Diseño y estructura para la recopilación organizada de información o datos.
+          </p>
+        </div>
+        <div class="servicio">
+          <span class="icono"><i class="fa fa-object-group" style="color:#7F540D"></i></span>
+          <h4>Metodologías ágiles</h4>
+          <hr />
+          <ul class="servicios-tag">
+            <li>Scrum</li>
+            <li>XP</li>
+            <li>Kanban</li>
+          </ul>
+          <p>
+            Modelos que ayudan a reducir el tiempo necesario para completar un proyecto y entregar más valor para el cliente, sin perder calidad.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION HABILIDADES-->
+    <div class="contenedor-skills" id="skills">
+      <h3>HABILIDADES</h3>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"></span>HTML & CSS</p>
+          <span class="porcentaje">95%</span>
+        </div>
+        <div class="barra">
+          <div id="html" class="barra-progreso1"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"></span>JavaScript</p>
+          <span class="porcentaje">90%</span>
+        </div>
+        <div class="barra">
+          <div id="js" class="barra-progreso2"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"></span>Base de Datos</p>
+          <span class="porcentaje">90%</span>
+        </div>
+        <div class="barra">
+          <div id="bd" class="barra-progreso3"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"></span>Redes</p>
+          <span class="porcentaje">90%</span>
+        </div>
+        <div class="barra">
+          <div id="conred" class="barra-progreso4"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+      <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+      <div class="fila">
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="img/proyecto1.jpg" alt="" />
+          <div class="info"  href="#sobremi">
+            <h4> <a href="https://drive.google.com/file/d/1DvTWIxhaHX3lgDmgvohh7foCwBwxbhrU/view?usp=sharing" target="_blank">Sistema Web de Transporte para la Gestión de Servicios ANSE</a></h4>
+            <p></p>
+          </div>
+        </div>
+
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="img/proyecto4.jpg" alt="" />
+          <div class="info">
+            <h4> <a href="https://drive.google.com/file/d/1IkAVJKH6NYsMDM-7oF4ReRTuDX4NY3wp/view?usp=sharing" target="_blank">Landing Page - Central Plaza</a></h4>
+          </div>
+        </div>
+
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto">
+      <h3 class="titulo-seccion">Contáctame ahora</h3>
+      <div class="contenedor-form">
+        <form action="https://formsubmit.co/josh_veb7@hotmail.com" method="POST">
+          <div class="fila mitad">
+            <input type="text" name="name" placeholder="Nombre Completo" id="input-mitad" />
+            <input type="email" name="email" placeholder="Direccion Email" id="input-mitad" />
+          </div>
+          <div class="fila">
+            <input type="text" name="subject" placeholder="Asunto" class="input-full" />
+          </div>
+          <div class="fila">
+            <textarea
+              name="comments"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Escriba aquí..."
+              class="input-full"
+            ></textarea>
+          </div>
+
+          <input type="submit" value="Enviar" class="btn-enviar"/>
+          <input type="hidden" name="_next" value="http://localhost/portf_web/"/>
+          <input type="hidden" name="_captcha" value="false"/>
+
+        </form>
+      </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+      <p>Todos los derechos reservados © fedenterprise- 2024</p>
+      <div class="redes">
+        <a href="https://www.linkedin.com/in/harlyvela/"><i class="fa-brands fa-linkedin"></i></i></a>
+        <a href="https://www.facebook.com/josept.vela02/"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/wru.josh/"><i class="fa-brands fa-instagram"></i></i></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
